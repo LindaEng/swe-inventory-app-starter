@@ -6,6 +6,11 @@ class User extends Model {}
 User.init({
     email: DataTypes.STRING,
     password: DataTypes.STRING,
+    // cart: {
+    //     brand: [],
+    //     chocolate: 6
+    // } // brand -> flavor(price) *
+
 }, {
     sequelize,
     timestamps: false,

@@ -32,6 +32,7 @@ seed();
 //View all brands as manager
 app.get('/brands', async (req, res) => {
     const brands = await Brand.findAll()
+    //
     res.render('brands', { brands }); //points to brands handlebar
 
 });
